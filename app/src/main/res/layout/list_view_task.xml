@@ -11,6 +11,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="13"
         android:padding="3dp"/>
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="13"
+        android:padding="3dp"/>
     <CheckBox
         android:id="@+id/checkboxTaskDone"
         android:layout_width="0dp"

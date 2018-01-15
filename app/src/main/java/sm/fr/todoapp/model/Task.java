@@ -8,21 +8,33 @@ public class Task {
     private String taskName;
     private Boolean done = false;
     private Long id;
+    private String userName;
 
     public Task() {
     }
 
-    public Task(String taskName) {
+    public Task(String taskName, String userName) {
         this.taskName = taskName;
+        this.userName= userName;
     }
 
-    public Task(String taskName, Boolean done) {
+    public Task(String taskName, String userName, Boolean done) {
         this.taskName = taskName;
+        this.userName= userName;
         this.done = done;
+
     }
 
+    public String getUserName() {
+        return userName;
+    }
     public String getTaskName() {
         return taskName;
+    }
+
+    public Task setuserName(String userName) {
+        this.userName = userName;
+        return this;
     }
 
     public Task setTaskName(String taskName) {

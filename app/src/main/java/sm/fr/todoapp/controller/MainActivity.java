@@ -243,6 +243,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             //Affichage du texte de la tâche
             TextView textView = v.findViewById(R.id.textViewTaskName);
             textView.setText(currentTask.getTaskName());
+            TextView textView1 = v.findViewById(R.id.textViewUserName);
+            textView1.setText(currentTask.getUserName());
+
 
             //Affichage de la case à cocher
             CheckBox checkDone = v.findViewById(R.id.checkboxTaskDone);

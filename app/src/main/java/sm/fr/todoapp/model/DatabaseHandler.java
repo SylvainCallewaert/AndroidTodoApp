@@ -18,6 +18,7 @@ public class DatabaseHandler extends SQLiteOpenHelper{
     private static final String TASK_TABLE_SQL = "CREATE TABLE tasks(" +
             "id INTEGER PRIMARY KEY AUTOINCREMENT," +
             "task_name TEXT NOT NULL," +
+            "user_name TEXT NOT NULL," +
             "done INTEGER NOT NULL)";
 
     private Boolean isNew = false;
